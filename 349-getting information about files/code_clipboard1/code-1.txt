@@ -1,0 +1,10 @@
+prompt> echo hello > file
+prompt> stat file
+File: ‘file’
+  Size: 6   Blocks: 8   IO Block: 4096   regular file
+Device: 811h/2065d Inode: 67158084    Links: 1
+Access: (0640/-rw-r-----) Uid: (30686/remzi)
+  Gid: (30686/remzi)
+Access: 2011-05-03 15:50:20.157594748 -0500
+Modify: 2011-05-03 15:50:20.157594748 -0500
+Change: 2011-05-03 15:50:20.157594748 -0500

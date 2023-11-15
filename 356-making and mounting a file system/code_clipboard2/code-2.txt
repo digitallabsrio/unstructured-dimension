@@ -1,0 +1,7 @@
+/dev/sda1 on / type ext3 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+/dev/sda5 on /tmp type ext3 (rw)
+/dev/sda7 on /var/vice/cache type ext3 (rw)
+tmpfs on /dev/shm type tmpfs (rw)
+AFS on /afs type afs (rw)

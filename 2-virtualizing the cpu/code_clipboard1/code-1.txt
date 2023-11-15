@@ -1,0 +1,13 @@
+prompt> ./cpu A & ./cpu B & ./cpu C & ./cpu D &
+[1] 7353
+[2] 7354
+[3] 7355
+[4] 7356 A
+B
+D
+C
+A
+B
+D
+C
+A ...

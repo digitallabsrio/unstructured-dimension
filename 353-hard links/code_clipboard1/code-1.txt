@@ -1,0 +1,4 @@
+prompt> ls -i file file2
+67158084 file
+67158084 file2
+prompt>

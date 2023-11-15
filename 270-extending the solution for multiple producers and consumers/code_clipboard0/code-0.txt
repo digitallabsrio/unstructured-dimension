@@ -1,0 +1,21 @@
+void *producer(void *arg) {
+    int i;
+    for (i = 0; i < loops; i++) {
+		sem_wait(&mutex); // Line P0 (NEW LINE)
+		sem_wait(&empty); // Line P1
+		put(i);           // Line P2                 
+		sem_post(&full);  // Line P3
+		sem_post(&mutex); // Line P4 (NEW LINE)
+    }
+}
+void *consumer(void *arg) {
+	int i;
+    for (i = 0; i < loops; i++) {
+		sem_wait(&mutex); // Line C0 (NEW LINE)
+		sem_wait(&full);  // Line C1
+		int tmp = get();  // Line C2                 
+		sem_post(&empty);  // Line C3
+		sem_post(&mutex); // Line C4 (NEW LINE)
+		printf("%d\n", tmp);
+    }
+}

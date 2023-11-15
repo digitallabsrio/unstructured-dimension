@@ -1,0 +1,4 @@
+typedef struct {
+    int size;
+    int magic;
+} header_t;

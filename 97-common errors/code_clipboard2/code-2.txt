@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main() {
+    
+    char *src = "hello";
+    char *dst = (char *) malloc(strlen(src)); // too small!
+    strcpy(dst, src); // work properly
+    printf("%s", dst);
+    return 0;
+}

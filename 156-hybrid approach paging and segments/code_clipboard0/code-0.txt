@@ -1,0 +1,3 @@
+SN           = (VirtualAddress & SEG_MASK) >> SN_SHIFT
+VPN          = (VirtualAddress & VPN_MASK) >> VPN_SHIFT
+AddressOfPTE = Base[SN] + (VPN * sizeof(PTE))

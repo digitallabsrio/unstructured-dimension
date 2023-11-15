@@ -1,0 +1,14 @@
+void *producer(void *arg) {
+  int i;
+  int loops = (int) arg;
+  for (i = 0; i < loops; i++) {
+    put(i);
+  }
+}
+
+void *consumer(void *arg) {
+  while (1) {
+      int tmp = get();
+      printf("%d\n", tmp);
+  }
+}

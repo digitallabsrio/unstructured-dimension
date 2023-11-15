@@ -1,0 +1,4 @@
+prompt> gcc -o thread threads.c -Wall -pthread
+prompt> ./thread 1000
+Initial value : 0
+Final value   : 2000

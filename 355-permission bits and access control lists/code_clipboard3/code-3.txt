@@ -1,0 +1,3 @@
+prompt> chmod 600 hello.csh
+prompt> ./hello.csh
+./hello.csh: Permission denied.

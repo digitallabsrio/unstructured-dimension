@@ -1,0 +1,5 @@
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
+Pthread_mutex_lock(&lock); // wrapper; exits on failure
+balance = balance + 1;
+Pthread_mutex_unlock(&lock);

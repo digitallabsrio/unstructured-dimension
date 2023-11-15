@@ -1,0 +1,2 @@
+prompt> ls -l foo.txt
+ -rw-r--r--  1 remzi wheel  0 Aug 24 16:29 foo.txt

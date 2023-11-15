@@ -1,0 +1,7 @@
+int CompareAndSwap(int *address, int expected, int new) {
+      if (*address == expected) {
+          *address = new;
+          return 1; // success
+      }
+    return 0; // failure 
+}

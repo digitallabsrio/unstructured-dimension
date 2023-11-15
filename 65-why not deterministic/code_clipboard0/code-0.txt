@@ -1,0 +1,4 @@
+curr = remove_min(queue);   // pick client with min pass
+schedule(curr);             // run for quantum
+curr->pass += curr->stride; // update pass using stride
+insert(queue, curr);        // return curr to queue

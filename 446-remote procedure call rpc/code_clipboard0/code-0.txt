@@ -1,0 +1,4 @@
+interface {
+  int func1(int arg1);
+  int func2(int arg1, int arg2);
+};

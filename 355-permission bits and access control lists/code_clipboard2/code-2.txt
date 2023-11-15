@@ -1,0 +1,2 @@
+prompt> ./hello.csh
+hello, from shell world.

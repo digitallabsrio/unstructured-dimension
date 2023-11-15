@@ -1,0 +1,5 @@
+prompt> ./p1
+hello world (pid:29146)
+hello, I am parent of 29147 (pid:29146)
+hello, I am child (pid:29147)
+prompt>

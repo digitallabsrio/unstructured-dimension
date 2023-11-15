@@ -1,0 +1,5 @@
+lock_t mutex; // some globally-allocated lock ’mutex’
+...
+lock(&mutex);
+balance = balance + 1;
+unlock(&mutex);

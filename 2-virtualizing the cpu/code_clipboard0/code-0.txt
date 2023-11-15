@@ -1,0 +1,7 @@
+prompt> gcc -o cpu cpu.c -Wall
+prompt> ./cpu "A"
+A
+A
+A
+A
+ˆC prompt>

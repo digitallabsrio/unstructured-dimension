@@ -1,0 +1,14 @@
+int buffer[MAX];
+int fill = 0;
+int use = 0;
+
+void put(int value) {
+  buffer[fill] = value; //Line F1
+  fill = (fill + 1) % MAX; //Line F2
+}
+
+int get() {
+  int tmp = buffer[use]; // Line G1 
+  use = ( use + 1) % MAX; //Line G2 
+  return tmp;
+}

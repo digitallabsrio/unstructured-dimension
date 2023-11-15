@@ -1,0 +1,2 @@
+int rc = read(fd, buffer, size);
+rc = write(sd, buffer, size);

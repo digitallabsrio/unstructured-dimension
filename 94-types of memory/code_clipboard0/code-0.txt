@@ -1,0 +1,4 @@
+void func() {
+        int x; // declares an integer on the stack
+        ...
+}

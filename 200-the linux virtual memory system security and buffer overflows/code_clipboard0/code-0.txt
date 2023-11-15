@@ -1,0 +1,4 @@
+int some_function(char *input) {
+  char dest_buffer[100];
+  strcpy(dest_buffer, input); // oops, unbounded copy!
+}

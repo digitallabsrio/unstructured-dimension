@@ -1,0 +1,9 @@
+void thr_exit() {
+  done = 1;
+  Pthread_cond_signal(&c);
+}
+
+void thr_join() {
+  if (done == 0)
+    Pthread_cond_wait(&c);
+}

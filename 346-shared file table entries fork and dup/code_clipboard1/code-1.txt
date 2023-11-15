@@ -1,0 +1,4 @@
+prompt> ./fork-seek
+child: offset 10
+parent: offset 10
+prompt>

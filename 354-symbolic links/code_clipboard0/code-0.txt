@@ -1,0 +1,4 @@
+prompt> echo hello > file
+prompt> ln -s file file2
+prompt> cat file2
+hello

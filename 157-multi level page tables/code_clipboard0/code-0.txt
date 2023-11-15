@@ -1,0 +1,1 @@
+PTEAddr = (PDE.PFN << SHIFT) + (PTIndex * sizeof(PTE))

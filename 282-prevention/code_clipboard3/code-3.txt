@@ -1,0 +1,5 @@
+void AtomicIncrement(int *value, int amount) {
+  do {
+    int old = *value;
+  } while (CompareAndSwap(value, old, old + amount) == 0);
+}

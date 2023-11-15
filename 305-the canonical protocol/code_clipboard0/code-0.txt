@@ -1,0 +1,7 @@
+While (STATUS == BUSY)
+  ; // wait until device is not busy
+Write data to DATA register
+Write command to COMMAND register
+  (starts the device and executes the command)
+While (STATUS == BUSY)
+  ; // wait until device is done with your request

@@ -1,0 +1,6 @@
+prompt> ./p3
+hello world (pid:29383)
+hello, I am child (pid:29384)
+      29     107    1030 p3.c
+hello, I am parent of 29384 (rc_wait:29384) (pid:29383)
+prompt>

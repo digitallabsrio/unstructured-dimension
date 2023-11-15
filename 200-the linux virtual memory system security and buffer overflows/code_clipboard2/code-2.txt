@@ -1,0 +1,6 @@
+prompt> ./random
+0x7ffd3e55d2b4
+prompt> ./random
+0x7ffe1033b8f4
+prompt> ./random
+0x7ffe45522e94

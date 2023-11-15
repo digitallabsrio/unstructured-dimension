@@ -1,0 +1,9 @@
+void insert (int value){
+    node_t *n = malloc(sizeof(node_t));
+    assert(n != NULL);
+    n->value = value;
+    pthread_mutex_lock(listlock);   // begin critical section
+    n->next  = head;
+    head     = n;
+    pthread_mutex_unlock(listlock); // end critical section
+}

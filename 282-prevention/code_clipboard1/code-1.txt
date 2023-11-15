@@ -1,0 +1,6 @@
+top:
+    pthread_mutex_lock(L1);
+    if (pthread_mutex_trylock(L2) != 0) {
+        pthread_mutex_unlock(L1);
+        goto top;
+    }

@@ -1,0 +1,6 @@
+(N, T) = SegmentSummary[A];
+inode  = Read(imap[N]);
+if (inode[T] == A)
+    // block D is alive
+else
+    // block D is garbage

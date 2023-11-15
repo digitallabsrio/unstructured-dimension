@@ -1,0 +1,11 @@
+void thr_exit() {
+  Pthread_mutex_lock(&m);
+  Pthread_cond_signal(&c);
+  Pthread_mutex_unlock(&m);
+}
+
+void thr_join() {
+    Pthread_mutex_lock(&m);
+    Pthread_cond_wait(&c, &m);
+    Pthread_mutex_unlock(&m);
+}

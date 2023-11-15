@@ -1,0 +1,7 @@
+TestAuth        Test whether a file has changed
+                (used to validate cached entries)
+GetFileStat     Get the stat info for a file
+Fetch           Fetch the contents of file
+Store           Store this file on the server      
+SetFileStat     Set the stat info for a file
+ListDir         List the contents of a directory

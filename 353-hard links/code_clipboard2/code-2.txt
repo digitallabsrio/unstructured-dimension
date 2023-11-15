@@ -1,0 +1,4 @@
+prompt> rm file
+removed ‘file’
+prompt> cat file2
+hello

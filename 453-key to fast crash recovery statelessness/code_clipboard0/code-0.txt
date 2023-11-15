@@ -1,0 +1,7 @@
+char buffer[MAX];
+int fd = open("foo", O_RDONLY); // get descriptor "fd"
+read(fd, buffer, MAX);          // read MAX from foo via "fd"
+read(fd, buffer, MAX);          // read MAX again
+...
+read(fd, buffer, MAX);          // read MAX again
+close(fd);                      // close file

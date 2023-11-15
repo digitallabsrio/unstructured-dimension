@@ -1,0 +1,3 @@
+int pthread_mutex_trylock(pthread_mutex_t *mutex);
+int pthread_mutex_timedlock(pthread_mutex_t *mutex,
+                            struct timespec *abs_timeout);

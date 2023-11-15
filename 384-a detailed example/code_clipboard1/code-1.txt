@@ -1,0 +1,7 @@
+owner       : remzi
+permissions : read-write
+size        : 2
+pointer     : 4
+pointer     : 5
+pointer     : null 
+pointer     : null

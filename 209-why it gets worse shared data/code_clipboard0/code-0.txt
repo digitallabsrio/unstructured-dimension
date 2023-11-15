@@ -1,0 +1,7 @@
+prompt> gcc -o t1 t1.c -Wall -pthread; ./t1 20000000
+main: begin (counter = 0)
+A: begin
+B: begin
+A: done
+B: done
+main: done with both (counter = 20000000)

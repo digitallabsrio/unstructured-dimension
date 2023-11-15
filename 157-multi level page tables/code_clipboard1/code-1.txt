@@ -1,0 +1,24 @@
+VPN = (VirtualAddress & VPN_MASK) >> SHIFT
+(Success, TlbEntry) = TLB_Lookup(VPN)
+if (Success == True)   // TLB Hit
+  if (CanAccess(TlbEntry.ProtectBits) == True) 
+    Offset = VirtualAddress & OFFSET_MASK
+    PhysAddr = (TlbEntry.PFN << SHIFT) | Offset 
+    Register = AccessMemory(PhysAddr)
+  else
+    RaiseException(PROTECTION_FAULT)
+else //TLB Miss
+  // first, get page directory entry 
+  // PDE is valid: now fetch PTE from page table
+  PDIndex = (VPN & PD_MASK) >> PD_SHIFT 
+  PDEAddr = PDBR + (PDIndex * sizeof(PDE)) 
+  PDE = AccessMemory(PDEAddr)
+  if (PDE.Valid == False)
+    RaiseException(SEGMENTATION_FAULT)
+  else if (CanAccess(PTE.ProtectBits) == False)
+      RaiseException(PROTECTION_FAULT)
+  else
+    PTEAddr = (PDE.PFN << SHIFT) + (PTIndex * sizeof(PTE))
+    PDE = AccessMemory(PDEAddr)
+    TLB_Insert(VPN, PTE.PFN, PTE.ProtectBits)
+    RetryInstruction()

@@ -1,0 +1,5 @@
+pthread_mutex_lock(prevention); // begin acquisition
+pthread_mutex_lock(L1);
+pthread_mutex_lock(L2);
+...
+pthread_mutex_unlock(prevention); // end

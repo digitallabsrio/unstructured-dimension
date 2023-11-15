@@ -1,0 +1,7 @@
+prompt> echo hello > file
+prompt> ln -s file file2
+prompt> cat file2
+hello
+prompt> rm file
+prompt> cat file2
+cat: file2: No such file or directory

@@ -1,0 +1,6 @@
+prompt> ./thread 100000
+Initial value : 0
+Final value   : 143012          // huh??
+prompt> ./thread 100000
+Initial value : 0
+Final value   : 137298          // what the??

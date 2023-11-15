@@ -1,0 +1,5 @@
+prompt> ls -al
+drwxr-x---  2 remzi remzi   29 May  3 19:10 ./
+drwxr-x--- 27 remzi remzi 4096 May  3 15:14 ../
+-rw-r-----  1 remzi remzi    6 May  3 19:10 file
+lrwxrwxrwx  1 remzi remzi    4 May  3 19:10 file2 -> file

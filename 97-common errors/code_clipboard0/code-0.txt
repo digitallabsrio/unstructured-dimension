@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    
+    char *src = "hello";
+    char *dst;        // oops! unallocated
+    strcpy(dst, src); // segfault and die
+    return 0;
+}

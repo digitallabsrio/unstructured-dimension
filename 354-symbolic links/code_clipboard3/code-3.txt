@@ -1,0 +1,6 @@
+prompt> echo hello > alongerfilename
+prompt> ln -s alongerfilename file3
+prompt> ls -al alongerfilename file3
+-rw-r----- 1 remzi remzi  6 May  3 19:17 alongerfilename
+lrwxrwxrwx 1 remzi remzi 15 May  3 19:17 file3 ->
+                                         alongerfilename

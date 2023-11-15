@@ -1,0 +1,3 @@
+int pthread_create(..., // first two args are the same
+              int (*start_routine)(void *),
+              void *arg);

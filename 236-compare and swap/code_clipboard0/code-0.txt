@@ -1,0 +1,6 @@
+int CompareAndSwap(int *ptr, int expected, int new) {
+    int original = *ptr;
+    if (original == expected)
+        *ptr = new;
+    return original;
+}

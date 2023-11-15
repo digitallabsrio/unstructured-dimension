@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main() {
+    
+    double *d = (double *) malloc(sizeof(double));
+    printf("%d\n", sizeof(d));
+    return 0;
+}

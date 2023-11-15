@@ -1,0 +1,2 @@
+while (ready == 0)
+    ; // spin

@@ -1,0 +1,4 @@
+prompt> ./p4
+prompt> cat p4.output
+      32     109     846 p4.c
+prompt>

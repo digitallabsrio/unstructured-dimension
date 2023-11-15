@@ -1,0 +1,8 @@
+prompt> ./mem 0
+(2134) address pointed to by p: 0x200000
+(2134) p: 1
+(2134) p: 2
+(2134) p: 3
+(2134) p: 4
+(2134) p: 5
+ˆC

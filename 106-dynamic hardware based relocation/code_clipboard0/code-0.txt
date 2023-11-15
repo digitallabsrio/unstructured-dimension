@@ -1,0 +1,1 @@
+128: movl 0x0(%ebx), %eax

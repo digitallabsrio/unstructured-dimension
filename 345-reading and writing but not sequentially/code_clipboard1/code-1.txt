@@ -1,0 +1,5 @@
+If whence is SEEK_SET, the offset is set to offset bytes.
+If whence is SEEK_CUR, the offset is set to its current
+location plus offset bytes.
+If whence is SEEK_END, the offset is set to the size of
+the file plus offset bytes.

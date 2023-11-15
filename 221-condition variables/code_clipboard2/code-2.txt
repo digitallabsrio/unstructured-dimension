@@ -1,0 +1,4 @@
+Pthread_mutex_lock(&lock);
+ready = 1;
+Pthread_cond_signal(&cond);
+Pthread_mutex_unlock(&lock);

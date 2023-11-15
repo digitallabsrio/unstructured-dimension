@@ -1,0 +1,4 @@
+prompt> echo hello > foo
+prompt> cat foo
+hello
+prompt>

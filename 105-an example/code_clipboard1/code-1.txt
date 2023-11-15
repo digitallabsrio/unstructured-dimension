@@ -1,0 +1,3 @@
+128: movl 0x0(%ebx), %eax ;load 0+ebx into eax
+132: addl $0x03, %eax     ;add 3 to eax register
+135: movl %eax, 0x0(%ebx) ;store eax back to mem

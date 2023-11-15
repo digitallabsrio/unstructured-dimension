@@ -1,0 +1,1 @@
+prompt> wc p3.c > newfile.txt

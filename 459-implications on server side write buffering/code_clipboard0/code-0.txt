@@ -1,0 +1,3 @@
+write(fd, a_buffer, size); // fill 1st block with a’s
+write(fd, b_buffer, size); // fill 2nd block with b’s
+write(fd, c_buffer, size); // fill 3rd block with c’s

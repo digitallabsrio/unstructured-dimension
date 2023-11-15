@@ -1,0 +1,5 @@
+void lock(lock_t *lock) {
+  while (LoadLinked(&lock->flag) ||
+        !StoreConditional(&lock->flag, 1))
+      ; // spin
+}

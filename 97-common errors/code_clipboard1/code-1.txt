@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main() {
+    
+    char *src = "hello";
+    char *dst = (char *) malloc(strlen(src) + 1);
+    strcpy(dst, src); // work properly
+    printf("dst: %s",dst);
+    return 0;
+}
